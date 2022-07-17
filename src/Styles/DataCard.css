@@ -1,0 +1,134 @@
+.dataCard_container {
+  max-width: 25vw;
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-rows: 25% 1fr;
+}
+.dataCard_background {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  z-index: -1;
+}
+.dataCard_container .dataCard_post {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1921px) {
+  .dataCard_container {
+    max-width: 20vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .dataCard_container {
+    max-width: 33.33vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .dataCard_container {
+    max-width: 50vw;
+  }
+}
+@media screen and (max-width: 321px) {
+  .dataCard_container {
+    max-width: 100vw;
+  }
+  .dataCard_container .dataCard_post {
+    margin-top: 0px;
+  }
+}
+
+/* ========== DayWithDate start ========== */
+
+.dayWithDate_container {
+  height: 100%;
+  padding: 15px;
+}
+.dayWithDate_dow {
+  font-size: max(1rem, 1.2vw);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dayWithDate_dom {
+  font-size: max(1.4rem, 3.5vw);
+  font-weight: 700;
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ========== DayWithDate end ========== */
+/* ========== DayPost start ========== */
+
+.dayPost_container {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+}
+.dayPost_text h3 {
+  font-size: max(1rem, 1.4vw);
+  line-height: 30px;
+  font-weight: 700;
+}
+.dayPost_text p {
+  line-height: 25px;
+}
+
+@media screen and (min-width: 1921px) {
+  .dayPost_text p {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+.dayPost_button_card_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+.dayPost_cardImage {
+  margin-top: 13px;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.dayPost_cardImage img {
+  border-radius: 5px;
+  width: 60%;
+}
+@media screen and (min-width: 1921px) {
+  .dayPost_cardImage img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 427px) and (max-width: 769px) {
+  .dayPost_cardImage img {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 322px) and (max-width: 426px) {
+  .dayPost_cardImage img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 321px) {
+  .dataCard_container {
+    max-width: 100vw;
+  }
+  .dataCard_container .dataCard_post {
+    margin-top: 0px;
+  }
+}
+/* ========== DayPost end ========== */

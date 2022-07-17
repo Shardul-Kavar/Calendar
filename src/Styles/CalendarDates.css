@@ -1,0 +1,27 @@
+.calendar_dates_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-top: clamp(20px, 10vw, 75px);
+}
+@media screen and (min-width: 1921px) {
+  .calendar_dates_container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 769px) {
+  .calendar_dates_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 426px) {
+  .calendar_dates_container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .calendar_dates_container {
+    grid-template-columns: 1fr;
+  }
+}

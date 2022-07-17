@@ -1,0 +1,29 @@
+.actionButtons_container {
+  position: fixed;
+  z-index: 10;
+  right: 20px;
+  bottom: 20px;
+}
+*{
+  transition-duration: 150ms;
+}
+.actionButtons_container > * {
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+}
+.actionButtons_container > *:hover{
+  filter: drop-shadow(1px 1px 5px black);
+}
+.filter_icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: lightgreen;
+}
+.post_icon {
+  width: 70px;
+  height: 70px;
+  margin: 20px 0;
+  background-color: lightblue;
+}
